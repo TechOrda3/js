@@ -3,6 +3,11 @@
 
 let result = 0;
 
+let text = "Text";
+let secondText = 'Text';
+let thirdText = `text: ${text} secondText: ${secondText}`;
+let alternative = 'text: ' + text + ' ' + 'secondText ' + secondText
+
 // let name = 'Extra 1';
 // let secondName = "EXTRA 2";
 // let thirdName = `firstName ${name} secondName ${secondName}`;
@@ -14,34 +19,47 @@ let result = 0;
 // let username = 'Nico';
 // let lastname = 'lastname'
 
-function add() { // void functions
-    result = result + +userInput.value
-    const text = `Result ${result} UserInput ${userInput.value}`
-    outputResult(result, text);
+/*
+    Данияр
+    Сабиров
+    Сивонин
+    Каримова
+    Куришбеков
+    Адилбек
+    Чалгымбаев
+    Гулим
+ */
+
+/*
+    1. return
+    2. void
+ */
+
+// 0 + '12' = '012';
+
+// '12' => 12
+
+function reset() {
     userInput.value = null;
     userInput.focus()
 }
 
+function add() {
+    const currentText = `result ${result} currentUserInput: ${userInput.value}`
+    result = result + +(userInput.value);
+    outputResult(result, currentText);
+    reset();
+}
+
 function multiply() {
-
+    const currentText = `result ${result} currentUserInput: ${userInput.value}`
+    result = result * +(userInput.value);
+    outputResult(result, currentText);
 }
-
-function divide() {
-
-}
-
-// function log(param1) {
-//     return param1;
-// }
-//
-// add(1, 2);
-//
-// console.log(log(2));
-
-document.addEventListener('DOMContentLoaded', function () {
-    userInput.focus()
-});
 
 addBtn.addEventListener('click', add);
-multiplyBtn.addEventListener('click', multiply);
-divideBtn.addEventListener('click', divide)
+multiplyBtn.addEventListener('click', multiply)
+
+document.addEventListener('DOMContentLoaded', () => {
+    userInput.focus();
+});

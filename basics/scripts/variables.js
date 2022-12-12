@@ -1,18 +1,43 @@
-let num = 1;
+var username;
+var lastName;
 
-let name = 'Nico';
+// let userName = 'Nico';
+// let isValid = false;
 
-let isValid = false;
-
-console.log('Before: ', num)
-num = 2;
-console.log('After: ', num);
-
-
-// const PERMISSIONS = 'NEVER EVER CAN CHANGE';
+// console.log(userName)
 //
-// PERMISSIONS = 'I WANNA CHANGE, BUT I CANT';
-
-// var username = 'Nico';
+// userName = 'Changed Nico'
 //
-// console.log(username);
+// console.log(userName);
+
+// let lastname;
+//
+// lastname = 'Nico';
+
+// let let = 'Nico';
+//
+// let user-name = '';
+// let last_name = '';
+// let 12name = '';
+
+// let basicsOfJs = '';
+// let _age = 12;
+//
+// let a = 1;
+
+// console.log(userName);
+//
+// var userName = 'Nico';
+// var lastName = 'LastName'
+//
+// userName = 'nico changed';
+//
+// console.log(userName);
+
+const defaultValue = 10;
+let age = 10;
+
+
+
+
+
