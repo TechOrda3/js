@@ -12,20 +12,27 @@
     1. getElementById ans so on
  */
 
-// function init() {
-//     const p = document.querySelector('p');
-//     console.log(p);
+const mainTitle = document.querySelector('#main-title');
+const listItems = document.querySelectorAll('.list-item');
+const heading = document.getElementById('main-title');
+
+document.querySelector('input')
+    .addEventListener('input', e => {
+        console.log(e)
+    console.log(e.target.value)
+});
+
+// mainTitle.setAttribute('data-my-attr', 'Test');
+
+// mainTitle.classList.add('some-class');
+// mainTitle.style.margin = 0;
+
+const toggle = () => mainTitle.classList.toggle('toggle');
+
+mainTitle.onclick = () => toggle()
+// mainTitle.classList.remove('some-class');
+
+// function name() {
 // }
 //
-// document.addEventListener('DOMContentLoaded', init);
-
-const mainTitle = document.getElementById('main-title');
-const header = document.querySelector('header')
-const listItems = document.querySelectorAll('.list-item');
-const listItemsByTag = document.getElementsByTagName('li');
-
-// console.log(listItemsByTag);
-// console.log(header.innerHTML);
-// console.log('DOMJS')
-// mainTitle.innerText = 'maintitle Changed';
-// document.querySelector('input').value = 'Value Changed!'
+// const name = () => {};
