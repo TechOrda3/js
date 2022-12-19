@@ -1,0 +1,17 @@
+.butts {
+    font-family: -apple-system sans-serif;
+    padding: 16px;
+    background-color: #d7480d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}
+
+.big {
+    height: 2000px;
+    background-color: orangered;
+}
