@@ -1,123 +1,103 @@
-
-const btn = document.querySelector('.butts');
-// const img = document.querySelector('.photo');
-
-//
-// document.addEventListener('visibilitychange', e => {
-//     if (document.visibilityState === 'hidden') {
-//     }
-// })
-//
-//
-
-// img.addEventListener('error', () => {
-//     console.log('Error')
-// })
-
-// function listenBtnClick(e, type = 'delete') {
-//     console.log(e)
-// }
-
-// let a = {};
-
-// CallBack
-// btn.addEventListener('click', listenBtnClick);
-// btn.removeEventListener('click', listenBtnClick);
-
+// const clickMeBtn = document.querySelector(".butts");
 // const coolBtn = document.querySelector('.cool');
 //
-// function handleClick() {
-//     console.log('Clicked')
-// }
-//
-// btn.addEventListener('click', handleClick);
-// coolBtn.addEventListener('click', handleClick);
-//
-// btn.removeEventListener('click', handleClick);
-//
+const innerBtn = document.querySelector('.inner__btn');
+const innerDiv = document.querySelector('.inner');
 
-// const buyButtons = document.querySelectorAll("button.buy");
+const input = document.querySelector('input');
 
-// console.log(buyButtons)
-// buyButtons.addEventListener('click', e => console.log(e))
-
-// document.querySelector('input').addEventListener('input', e => {
-//     console.log(e.currentTarget.value)
+// input.addEventListener('keyup', e => {
+//     console.log(e)
 // });
 
-// buyButtons.forEach(el => {
-//     el.addEventListener('click', function (e) {
-//         e.preventDefault()
-//         console.dir(e.currentTarget);
-//     });
+// innerBtn.addEventListener('click', e => {
+//     // e.preventDefault();
+//     console.log(e.target)
+// });
+//
+// innerDiv.addEventListener('click', e => {
+//     console.log(e.target)
 // });
 
-// window.addEventListener("click", function(event) {
-//         console.log("you clicked the window");
-//         // console.log(event.target);
-//         // console.log(event.type);
-//         // console.log(event.bubbles);
-//     },
-//     { capture: true }
-// );
-
-// const photoEl = document.querySelector(".photo");
-// photoEl.addEventListener("mousemove", function(e) {
-//     console.log(e.currentTarget);
-// });
+// const form = document.querySelector('#form');
 
 // document.querySelector('a').addEventListener('click', e => {
 //     e.preventDefault();
+// })
+
+// form.addEventListener('submit', event => {
+//     event.preventDefault();
+//     console.log(event)
 // });
 
-// document.querySelector('#form').addEventListener('submit', (e) => {
-//     // e.preventDefault();
-// })
-
-// const outer = document.querySelector('.outer');
-// const inner = document.querySelector('.inner');
-const innerBtn = document.querySelector('.inner__btn');
-// //
-function listen(e) {
-    // e.stopPropagation();
-    console.log(e);
-    // console.log(e.currentTarget);
-}
+// const listen = event => {
+//     const element = event.target;
+//     // element.setAttribute('disabled', true)
+//     // element.disabled = true
+//     console.log('event')
+// }
 //
-// // outer.addEventListener('click', listen);
-// inner.addEventListener('click', listen)
-innerBtn.addEventListener('click', listen)
-
-// document.addEventListener('keypress', e => {
-//     console.log(e);
+// clickMeBtn.addEventListener('click', listen);
+//
+// coolBtn.addEventListener('click', () => {
+//     console.log('removed event listener')
+//     clickMeBtn.removeEventListener('click', listen)
 // })
 
-// document.addEventListener('contextmenu', e => {
-//     // e.preventDefault();
+// window.addEventListener('click', e => {
+//     console.log('Clicked Window')
+// }, {
+//     capture: true
+// })
+
+// innerBtn.addEventListener('click', (e) => {
+//     console.log('target:', e.target);
+//     console.log('currenTarget: ', e.currentTarget)
+// }, {
+//     // capture: true
+//     // once: true
 // });
 
-const myEvent = new CustomEvent('testEvent', { bubbles: false });
-
-const customEvent = new Event('click', { bubbles: true  })
-
-// document.querySelector('.custom').addEventListener('click', () => {
-//     window.dispatchEvent(myEvent);
-// })
-//
-// window.addEventListener('testEvent', e => {
-//     console.log(e.bubbles)
-// })
-
-// const accept = document.getElementById('accept');
-//
-// const intersectionObserver = new IntersectionObserver(([e]) => {
-//     console.log('test')
-//     if (e.isIntersecting) {
-//         accept.removeAttribute('disabled');
-//         intersectionObserver.disconnect();
+// const customEvent = new CustomEvent('extraEvent', {
+//     bubbles: false,
+//     detail: {
+//         username: 'test',
+//         surname: 'test surname'
 //     }
 // });
 //
-// intersectionObserver.observe(accept);
+// // input.dispatchEvent(customEvent);
+//
+// input.addEventListener('extraEvent', e => {
+//     console.log(e)
+// })
 
+// window.addEventListener('scroll', e => {
+//     console.count('Res');
+//
+// })
 
+// document.querySelector('.big').addEventListener('resize', e => {
+//     console.log(e)
+// })
+
+// const acceptBtn = document.getElementById('accept');
+//
+// const intersectionObserver = new IntersectionObserver(entries => {
+//     console.log('entries');
+//     if (entries[0].isIntersecting) {
+//         acceptBtn.disabled = false;
+//         intersectionObserver.disconnect()
+//     }
+// }, {
+//     root: null
+// });
+//
+// const resizeObserver = new ResizeObserver(entries => {
+//     console.log(entries)
+// });
+//
+// resizeObserver.observe(document.querySelector('.big'));
+// intersectionObserver.observe(acceptBtn);
+
+// intersectionObserver.observe()
