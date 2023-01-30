@@ -1,0 +1,20 @@
+body {
+    background-color: red;
+}
+
+
+:root {
+    --primary-color: #c91717;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+h1 {
+    color: white;
+}
+
+h4 {
+    color: blueviolet;
+}

@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primaryColor: #fa923f;
+
+.description {
+  color: $primaryColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
