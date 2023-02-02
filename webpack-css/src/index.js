@@ -9,5 +9,5 @@ console.log('Index JS')
 console.log('hot reload')
 
 function test( ) {
-    console.log('Test FN')
+    console.log('')
 }

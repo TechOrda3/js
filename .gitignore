@@ -14,6 +14,7 @@
 /webpack-intro/dist/
 /webpack-css/dist/
 /webpack-css/node_modules/
+/webpack-bundle/node_modules/
 
 /webpack-intro-2/node_modules/
 /webpack-intro-2/dist/

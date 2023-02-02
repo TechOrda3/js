@@ -1,0 +1,13 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #1abc9c;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
