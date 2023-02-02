@@ -1,16 +1,20 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
 
     devServer: {
         static: './dist'
     },
 
     plugins: [
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'disabled'
+        }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        })
+        }),
     ],
 
     module: {
