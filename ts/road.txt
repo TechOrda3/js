@@ -1,0 +1,12 @@
+1. What is TS
+2. Superset
+3. Example with fn pure js (Babel)
+4. Typescript compiler
+5. Install npm i -g typescript
+6. First TS
+7. TS in action with DOM (Core types)
+8. Object types (object, array)
+9. Advanced Types (Literal, Union, Enums)
+10. Classes & Interfaces
+11. Generic
+12. Ts config (tsc --init)
