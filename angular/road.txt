@@ -1,0 +1,13 @@
+
+Components, Templates, Pipes
+
+1. Create component
+2. LifeCycle hooks
+3. Templates
+    Displaying values with interpolation (imgUrl for example)
+    Template statements (methods)
+    Binding to a property [src]
+    Attribute binding
+    Class and style binding
+    Event binding
+4. Understanding Pipes
