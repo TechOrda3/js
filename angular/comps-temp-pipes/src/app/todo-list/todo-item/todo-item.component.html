@@ -1,0 +1,8 @@
+<a [title]="photo.title">
+  <img [src]="photo.url" [alt]="photo.title" class="image">
+<!--  <span [style.color]="photo.id % 2 === 0 ? 'red': 'blue'">{{ photo.title }}</span>-->
+<!--  <span [class.red]="photo.id % 2 === 0" [class.blue]="photo.id % 2 !== 0">{{ photo.title }}</span>-->
+<!--  <span [ngClass]="{ red: photo.id % 2 === 0, blue: photo.id % 2 !== 0 }">{{ photo.title }}</span>-->
+  <span [ngStyle]="{ color: photo.id % 2 === 0 ? 'red': 'blue', fontSize: '24px' }">{{ photo.title }}</span>
+  <span (click)="onDelete.emit(photo.id)">❌</span>
+</a>

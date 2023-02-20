@@ -11,3 +11,4 @@ Components, Templates, Pipes
     Class and style binding
     Event binding
 4. Understanding Pipes
+5. Directives

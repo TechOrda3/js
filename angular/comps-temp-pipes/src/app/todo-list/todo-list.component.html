@@ -1,0 +1,8 @@
+<main>
+  <input (keyup.enter)="addPhoto(inputRefElement.value)" #inputRefElement>
+  <app-todo-item
+    *ngFor="let photo of photos"
+    [photo]="photo"
+    (onDelete)="removePhoto($event)"
+  ></app-todo-item>
+</main>
